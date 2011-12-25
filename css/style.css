@@ -1,0 +1,70 @@
+body {
+  font: 13px Arial;
+  text-align: center;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#header{
+  margin: 50px 0 10px 0;
+}
+
+#search_header{
+  margin: 50px 0 10px 0;
+}
+
+#footer {
+  margin-top: 150px;
+}
+
+#search_main {
+  text-align: left;
+  border-top: 1px dotted;
+  clear: both;
+  padding: 0 100px;
+}
+
+#logo_small {
+  float: left;
+  margin-left: 90px;
+}
+
+#alphabet {
+  border-top: 1px dotted;
+  border-bottom: 1px dotted;
+  padding: 5px 0;
+  clear: both;
+}
+
+#search {
+  float: right;
+  margin: 15px 90px 0 0;
+}
+
+#sb {
+  width: 400px;
+}
+
+a {
+  color: #6aa413;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  border-bottom: 1px dotted;
+}
+
+img {
+  border: none;
+}
+
+.active {
+  color: #497c00;
+  font-weight: bold;
+}
