@@ -1,21 +1,23 @@
+<div id="main">
+
+<h1>Επικοινωνία</h1>
+
 <?php if ($errors): ?>
-  <p class="error">Σφάλμα, διορθώστε τα στοιχεία σας:</p>
-  <ul>
+  <ul class="error message">
   <?php foreach ($errors as $name => $error): ?>
-    <li class="error">Λάθος <?php echo $name ?></li>
+    <li>Άκυρο <?php echo $name ?></li>
   <?php endforeach ?>
   </ul>
 <?php else: ?>
   <?php if(Request::current()->post('submit')) : ?>
-  <p class="success">Το μήνυμά σας παραδόθηκε! Ευχαριστούμε που επικοινωνήσατε μαζί μας!</p>
+  <ul class="success message">
+    <li>Το μήνυμά σας παραδόθηκε! Ευχαριστούμε που επικοινωνήσατε μαζί μας!</li>
+  </ul>
   <?php endif ?>
 <?php endif ?>
 
 <?php echo form::open('contact/send') ?>
 
-<div id="main">
-
-<h1>Επικοινωνία</h1>
 
 <div class="contact-form">
   <?php echo form::label('name', 'Όνομα:') ?>
@@ -30,7 +32,7 @@
   <?php echo form::input('Θέμα', '', array('id' => 'subject')) ?>
 </div>
 <div class="contact-form">
-  <?php echo form::label('message', 'Μήνυμα:') ?><br/>
+  <?php echo form::label('message', 'Μήνυμα:') ?>
   <?php echo form::textarea('Μήνυμα', '', array('id' => 'message')) ?>
 </div>
 <div class="contact-form">

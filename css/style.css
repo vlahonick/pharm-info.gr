@@ -69,7 +69,8 @@ img {
 }
 
 .error {
-  color: #cd0000;
+  background-color: #ffcccc;
+  border: 1px solid #dd7777;
 }
 
 .marginb5 {
@@ -79,3 +80,32 @@ img {
 h1 {
   font-size: 24px;
 }
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.contact-form textarea {
+  width: 450px;
+  height: 190px;
+}
+
+.contact-form input[type="text"] {
+  margin-bottom: 17px;
+  width: 250px;
+}
+
+.message {
+  font-weight: bold;
+  padding: 15px 35px;
+  margin-bottom: 25px;
+}
+
+.success {
+  background-color: #f8fff0;
+  color: #234600;
+  border: 1px solid #bbee77;
+}
+
+
