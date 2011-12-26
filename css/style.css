@@ -8,19 +8,19 @@ body {
   margin: 0 auto;
 }
 
+#logo {
+  margin: 50px 0 10px 0;
+}
+
 #header{
   margin: 50px 0 10px 0;
 }
 
-#search_header{
-  margin: 50px 0 10px 0;
-}
-
 #footer {
-  margin-top: 150px;
+  margin: 150px 0 25px 0;
 }
 
-#search_main {
+#main {
   text-align: left;
   border-top: 1px dotted;
   clear: both;
@@ -32,8 +32,7 @@ body {
   margin-left: 90px;
 }
 
-#alphabet {
-  border-top: 1px dotted;
+.alphabet {
   border-bottom: 1px dotted;
   padding: 5px 0;
   clear: both;
@@ -67,4 +66,16 @@ img {
 .active {
   color: #497c00;
   font-weight: bold;
+}
+
+.error {
+  color: #cd0000;
+}
+
+.marginb5 {
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 24px;
 }

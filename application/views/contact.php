@@ -1,5 +1,5 @@
 <?php if ($errors): ?>
-  <p class="info">Σφάλμα, διορθώστε τα στοιχεία σας:</p>
+  <p class="error">Σφάλμα, διορθώστε τα στοιχεία σας:</p>
   <ul>
   <?php foreach ($errors as $name => $error): ?>
     <li class="error">Λάθος <?php echo $name ?></li>
@@ -13,23 +13,29 @@
 
 <?php echo form::open('contact/send') ?>
 
+<div id="main">
+
+<h1>Επικοινωνία</h1>
+
 <div class="contact-form">
-  <?php echo form::label('name', 'Όνομα') ?>
+  <?php echo form::label('name', 'Όνομα:') ?>
   <?php echo form::input('Όνομα', '', array('id' => 'name')) ?>
 </div>
 <div class="contact-form">
-  <?php echo form::label('from', 'Email') ?>
+  <?php echo form::label('from', 'Email:') ?>
   <?php echo form::input('Email', '', array('id' => 'from')) ?>
 </div>
 <div class="contact-form">
-  <?php echo form::label('subject', 'Θέμα') ?>
+  <?php echo form::label('subject', 'Θέμα:') ?>
   <?php echo form::input('Θέμα', '', array('id' => 'subject')) ?>
 </div>
 <div class="contact-form">
-  <?php echo form::label('message', 'Μήνυμα') ?><br/>
+  <?php echo form::label('message', 'Μήνυμα:') ?><br/>
   <?php echo form::textarea('Μήνυμα', '', array('id' => 'message')) ?>
 </div>
 <div class="contact-form">
   <?php echo form::submit('submit', 'Αποστολή') ?>
 </div>
 <?php echo form::close() ?>
+
+</div>

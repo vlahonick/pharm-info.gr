@@ -1,8 +1,6 @@
-      <div id="header">
+      <div id="logo">
         <img src="images/logo.jpg" alt="InfoPharm" />
       </div>
-      <div id="main">
-        <a href="a-z.php">A - Z</a> | <a href="a-o.php">Α - Ω</a> | <a href="categories.php">Categories</a>
-          <br />
+        Αναζήτηση: <?php echo Model_HTML::anchor_active('az','Αλφαβητικά'); ?> | <?php echo Model_HTML::anchor_active('categories','Κατηγορίες'); ?>
+          <div class="marginb5"></div>
         <input type="text" name="Search Bar" id="sb" /> <input type="submit" value="Search" />
-      </div>

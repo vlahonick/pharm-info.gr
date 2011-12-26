@@ -25,10 +25,10 @@ class Controller_Contact extends Controller_Template {
     {
       Email::connect();
       $to = array('to' => 'rootatwc@gmail.com' , 'cc' => 'vlahonick@gmail.com');
-      $from = strip_tags($this->request->post('email'));
-      $subject = strip_tags($this->request->post('subject'));
+      $from = strip_tags($this->request->post('Email'));
+      $subject = strip_tags($this->request->post('Θέμα'));
 
-      $message = HTML::chars($this->request->post('message')).'<br/><hr/><br/>sent from '
+      $message = HTML::chars($this->request->post('Μήνυμα')).'<br/><hr/><br/>sent from '
         .strip_tags($this->request->post('name')).' at '
         .date('m-d-Y H:i', $_SERVER['REQUEST_TIME']).
         ' using your contact form at http://rootatwc.com/contact';

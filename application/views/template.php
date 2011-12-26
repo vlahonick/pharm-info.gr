@@ -16,31 +16,24 @@
       
       <?php if ( ! $home) :?>
        
-      <div id="search_header">
+      <div id="header">
         <a href="<?php echo url::base(); ?>">
           <img src="<?php echo url::base(); ?>images/logo_small.jpg" alt="InfoPharm" id="logo_small" />
         </a>
         <div id="search">
-          <a href="a-z.php">A - Z</a> | <a href="a-o.php">Α - Ω</a> | <a href="categories.php">Categories</a>
-            <br />
+          Αναζήτηση: <?php echo Model_HTML::anchor_active('az','Αλφαβητικά'); ?> | <?php echo Model_HTML::anchor_active('categories','Κατηγορίες'); ?>
+            <div class="marginb5"></div>
           <input type="text" name="Search Bar" id="sb" /> <input type="submit" value="Search" />
         </div>
-      </div>
-
+      </div> <!-- end header-->
       <?php endif; ?>
       
-      
-      
-      <div id="main">
         <?php print $content; ?>
-      </div>
 
-    
-    
       <div id="footer">
-        <?php echo Model_HTML::anchor_active('about','About'); ?> | <?php echo Model_HTML::anchor_active('faq','FAQ'); ?> | <?php echo Model_HTML::anchor_active('disclaimer','Disclaimer'); ?> | <?php echo Model_HTML::anchor_active('contact','Contact'); ?>
+        <?php echo Model_HTML::anchor_active('/','Home'); ?> |  <?php echo Model_HTML::anchor_active('about','About'); ?> | <?php echo Model_HTML::anchor_active('faq','FAQ'); ?> | <?php echo Model_HTML::anchor_active('disclaimer','Disclaimer'); ?> | <?php echo Model_HTML::anchor_active('contact','Contact'); ?>
       </div>
     </div> <!-- end wrapper -->
-  
+
   </body>
 </html>
