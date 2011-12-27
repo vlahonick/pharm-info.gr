@@ -9,7 +9,7 @@ body {
 }
 
 #logo {
-  margin: 50px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
 
 #header{
@@ -40,12 +40,21 @@ body {
 
 #search {
   float: right;
-  margin: 15px 90px 0 0;
+  margin: 15px 90px 20px 0;
 }
 
 #sb {
   width: 400px;
 }
+
+#simg {
+
+}
+
+
+
+
+/* Links */
 
 a {
   color: #6aa413;
@@ -59,18 +68,15 @@ a:active, a:hover {
   border-bottom: 1px dotted;
 }
 
-img {
-  border: none;
-}
-
 .active {
   color: #497c00;
   font-weight: bold;
 }
 
-.error {
-  background-color: #ffcccc;
-  border: 1px solid #dd7777;
+/* Misc */
+
+img {
+  border: none;
 }
 
 .marginb5 {
@@ -80,6 +86,13 @@ img {
 h1 {
   font-size: 24px;
 }
+
+.ab {
+  margin: 30px 0 50px 0;
+}
+
+
+/* Contact Form */
 
 .contact-form label {
   display: block;
@@ -108,6 +121,8 @@ h1 {
   border: 1px solid #bbee77;
 }
 
-.ab {
-  margin: 30px 0 50px 0;
+.error {
+  background-color: #ffcccc;
+  border: 1px solid #dd7777;
 }
+
