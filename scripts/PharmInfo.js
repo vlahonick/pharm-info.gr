@@ -1,6 +1,6 @@
 (function($) {
   $(document).ready( function () {
-    $( "#el-tabs, #en-tabs" ).tabs({
+    $( "#el-tabs" ).tabs({
       ajaxOptions: {
         error: function( xhr, status, index, anchor ) {
           $( anchor.hash ).html(
@@ -9,7 +9,11 @@
         }
       }
     });
-    
+    $( "#en-tabs" ).tabs();
+    $( ".tabs-bottom .ui-tabs-nav, .tabs-bottom .ui-tabs-nav > *" )
+			.removeClass( "ui-corner-all ui-corner-top" )
+			.addClass( "ui-corner-bottom" );
+      
     var availableTags = [
 			"ActionScript",
 			"AppleScript",

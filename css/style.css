@@ -48,7 +48,7 @@ body {
 }
 
 #simg {
-
+  margin-bottom: -14px;
 }
 
 
@@ -88,7 +88,7 @@ h1 {
 }
 
 .ab {
-  margin: 30px 0 50px 0;
+  margin-top: 25px;
 }
 
 
@@ -125,4 +125,3 @@ h1 {
   background-color: #ffcccc;
   border: 1px solid #dd7777;
 }
-
