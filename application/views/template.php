@@ -23,7 +23,12 @@
           <img src="<?php echo url::base(); ?>images/logo_small.jpg" alt="InfoPharm" id="logo_small" />
         </a>
         <div id="search">
-          Αναζήτηση: <?php echo Model_HTML::anchor_active('az','Αλφαβητικά'); ?> | <?php echo Model_HTML::anchor_active('categories','Κατηγορίες'); ?>
+          Αναζήτηση: <select>
+                      <option value="">Δρ. Ουσίες Αλφαβητικά</option>
+                      <option value="">Δρ. Ουσίες Αλφαβητικά (Αγγλικά)</option>
+                      <option value="">Εμπορικές Ονομασίες</option>
+                      <option value="">Φαρμακολογική Κατηγορία</option>
+                     </select>
             <div class="marginb5"></div>
           <input type="text" name="Search Bar" id="sb" /> <input type="image" src="<?php echo url::base(); ?>images/search.png" id="simg" />
         </div>
