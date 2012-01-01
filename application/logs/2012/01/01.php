@@ -1460,3 +1460,456 @@
 --
 #0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
 #1 {main}
+2012-01-01 05:36:30 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:36:30 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:36:33 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:36:33 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:36:33 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: user/images/favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:36:33 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: user/images/favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:36:34 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:36:34 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:36:41 --- ERROR: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH/orm/classes/kohana/orm.php [ 1174 ]
+2012-01-01 05:36:41 --- STRACE: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH/orm/classes/kohana/orm.php [ 1174 ]
+--
+#0 /var/www/PharmInfo/modules/orm/classes/kohana/orm.php(1200): Kohana_ORM->check(NULL)
+#1 /var/www/PharmInfo/modules/orm/classes/kohana/orm.php(1314): Kohana_ORM->create(NULL)
+#2 /var/www/PharmInfo/application/classes/controller/admin.php(23): Kohana_ORM->save()
+#3 [internal function]: Controller_Admin->action_add()
+#4 /var/www/PharmInfo/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-01-01 05:36:42 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:36:42 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:36:48 --- ERROR: ErrorException [ 1 ]: Class 'Message' not found ~ APPPATH/classes/controller/admin.php [ 24 ]
+2012-01-01 05:36:48 --- STRACE: ErrorException [ 1 ]: Class 'Message' not found ~ APPPATH/classes/controller/admin.php [ 24 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-01-01 05:36:48 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:36:48 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:37:35 --- ERROR: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH/orm/classes/kohana/orm.php [ 1174 ]
+2012-01-01 05:37:35 --- STRACE: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH/orm/classes/kohana/orm.php [ 1174 ]
+--
+#0 /var/www/PharmInfo/modules/orm/classes/kohana/orm.php(1200): Kohana_ORM->check(NULL)
+#1 /var/www/PharmInfo/modules/orm/classes/kohana/orm.php(1314): Kohana_ORM->create(NULL)
+#2 /var/www/PharmInfo/application/classes/controller/admin.php(23): Kohana_ORM->save()
+#3 [internal function]: Controller_Admin->action_add()
+#4 /var/www/PharmInfo/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-01-01 05:37:35 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:37:35 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:37:38 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:37:38 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:37:38 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: user/images/favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:37:38 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: user/images/favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:37:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:37:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:37:43 --- ERROR: ErrorException [ 1 ]: Class 'Message' not found ~ APPPATH/classes/controller/admin.php [ 24 ]
+2012-01-01 05:37:43 --- STRACE: ErrorException [ 1 ]: Class 'Message' not found ~ APPPATH/classes/controller/admin.php [ 24 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-01-01 05:37:43 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:37:43 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:39:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:39:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:39:17 --- ERROR: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH/orm/classes/kohana/orm.php [ 1174 ]
+2012-01-01 05:39:17 --- STRACE: ORM_Validation_Exception [ 0 ]: Failed to validate array ~ MODPATH/orm/classes/kohana/orm.php [ 1174 ]
+--
+#0 /var/www/PharmInfo/modules/orm/classes/kohana/orm.php(1200): Kohana_ORM->check(NULL)
+#1 /var/www/PharmInfo/modules/orm/classes/kohana/orm.php(1314): Kohana_ORM->create(NULL)
+#2 /var/www/PharmInfo/application/classes/controller/admin.php(23): Kohana_ORM->save()
+#3 [internal function]: Controller_Admin->action_add()
+#4 /var/www/PharmInfo/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Admin))
+#5 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#6 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#7 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#8 {main}
+2012-01-01 05:39:17 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:39:17 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:39:20 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:39:20 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:39:22 --- ERROR: ErrorException [ 1 ]: Class 'Message' not found ~ APPPATH/classes/controller/admin.php [ 24 ]
+2012-01-01 05:39:22 --- STRACE: ErrorException [ 1 ]: Class 'Message' not found ~ APPPATH/classes/controller/admin.php [ 24 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-01-01 05:39:22 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:39:22 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:06 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:06 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: css/images/ui-bg_highlight-hard_100_f5f3e5_1x100.png ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:06 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: user/images/favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:06 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: user/images/favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:06 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userg was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-01-01 05:40:06 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userg was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:06 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:06 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:07 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguid was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+2012-01-01 05:40:07 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguid was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 87 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:07 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:07 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:07 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:07 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:07 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:07 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:50 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:50 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:50 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:50 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:50 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:50 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:50 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:50 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:50 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:50 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:50 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:50 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:50 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:50 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:51 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:51 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:51 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:51 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:51 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:51 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:51 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:51 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:51 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:51 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:51 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:51 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:51 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:51 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:40:52 --- ERROR: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+2012-01-01 05:40:52 --- STRACE: HTTP_Exception_404 [ 404 ]: The requested URL userguide was not found on this server. ~ SYSPATH/classes/kohana/request/client/internal.php [ 113 ]
+--
+#0 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#1 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#2 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#3 {main}
+2012-01-01 05:40:52 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:40:52 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:41:28 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:41:28 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:41:38 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:41:38 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:41:41 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:41:41 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:13 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:13 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:15 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:15 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:16 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:16 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:38 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:38 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:38 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:38 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:39 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:39 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:43:40 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:43:40 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:48:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:48:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:48:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:48:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:48:25 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:48:25 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:48:26 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:48:26 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:48:27 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:48:27 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:48:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:48:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:50:34 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM ~ APPPATH/classes/controller/admin.php [ 24 ]
+2012-01-01 05:50:34 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM ~ APPPATH/classes/controller/admin.php [ 24 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-01-01 05:50:34 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:50:34 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:50:36 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:50:36 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:50:41 --- ERROR: ErrorException [ 4 ]: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM ~ APPPATH/classes/controller/admin.php [ 24 ]
+2012-01-01 05:50:41 --- STRACE: ErrorException [ 4 ]: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM ~ APPPATH/classes/controller/admin.php [ 24 ]
+--
+#0 [internal function]: Kohana_Core::shutdown_handler()
+#1 {main}
+2012-01-01 05:50:41 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:50:41 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:51:00 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:51:00 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:51:04 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:51:04 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:52:02 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:52:02 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:52:31 --- ERROR: ErrorException [ 8 ]: Undefined variable: message ~ APPPATH/views/admin/user.php [ 1 ]
+2012-01-01 05:52:31 --- STRACE: ErrorException [ 8 ]: Undefined variable: message ~ APPPATH/views/admin/user.php [ 1 ]
+--
+#0 /var/www/PharmInfo/application/views/admin/user.php(1): Kohana_Core::error_handler(8, 'Undefined varia...', '/var/www/PharmI...', 1, Array)
+#1 /var/www/PharmInfo/system/classes/kohana/view.php(61): include('/var/www/PharmI...')
+#2 /var/www/PharmInfo/system/classes/kohana/view.php(343): Kohana_View::capture('/var/www/PharmI...', Array)
+#3 /var/www/PharmInfo/system/classes/kohana/view.php(228): Kohana_View->render()
+#4 /var/www/PharmInfo/system/classes/kohana/response.php(160): Kohana_View->__toString()
+#5 /var/www/PharmInfo/application/classes/controller/admin.php(47): Kohana_Response->body(Object(View))
+#6 [internal function]: Controller_Admin->action_add()
+#7 /var/www/PharmInfo/system/classes/kohana/request/client/internal.php(118): ReflectionMethod->invoke(Object(Controller_Admin))
+#8 /var/www/PharmInfo/system/classes/kohana/request/client.php(64): Kohana_Request_Client_Internal->execute_request(Object(Request))
+#9 /var/www/PharmInfo/system/classes/kohana/request.php(1138): Kohana_Request_Client->execute(Object(Request))
+#10 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#11 {main}
+2012-01-01 05:52:31 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:52:31 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:52:45 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:52:45 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:52:48 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:52:48 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:53:50 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:53:50 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:53:52 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:53:52 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
+2012-01-01 05:55:12 --- ERROR: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+2012-01-01 05:55:12 --- STRACE: HTTP_Exception_404 [ 404 ]: Unable to find a route to match the URI: favicon.ico ~ SYSPATH/classes/kohana/request.php [ 1126 ]
+--
+#0 /var/www/PharmInfo/index.php(109): Kohana_Request->execute()
+#1 {main}
