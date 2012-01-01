@@ -18,7 +18,6 @@
 
 <?php echo form::open('contact/send') ?>
 
-
 <div class="contact-form">
   <?php echo form::label('name', 'Όνομα:') ?>
   <?php echo form::input('Όνομα', '', array('id' => 'name')) ?>

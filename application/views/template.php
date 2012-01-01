@@ -15,9 +15,9 @@
   </head>
   <body>
     <div id="wrapper">
-      
-      <?php if ( ! $home) :?>
-       
+
+      <?php if ( ! isset($home)) :?>
+
       <div id="header">
         <a href="<?php echo url::base(); ?>">
           <img src="<?php echo url::base(); ?>images/logo_small.jpg" alt="InfoPharm" id="logo_small" />
@@ -34,7 +34,7 @@
         </div>
       </div> <!-- end header-->
       <?php endif; ?>
-      
+
         <?php print $content; ?>
 
       <div id="footer">
