@@ -38,7 +38,7 @@
         <?php print $content; ?>
 
       <div id="footer">
-        <?php echo Model_HTML::anchor_active('/','Home'); ?> |  <?php echo Model_HTML::anchor_active('about','About'); ?> | <?php echo Model_HTML::anchor_active('faq','FAQ'); ?> | <?php echo Model_HTML::anchor_active('disclaimer','Disclaimer'); ?> | <?php echo Model_HTML::anchor_active('contact','Contact'); ?>
+        <?php echo Model_HTML::anchor_active('/','Home'); ?> |  <?php echo Model_HTML::anchor_active('about','About'); ?> | <?php echo Model_HTML::anchor_active('faq','FAQ'); ?> | <?php echo Model_HTML::anchor_active('disclaimer','Disclaimer'); ?> | <?php echo Model_HTML::anchor_active('help-us','Help Us'); ?> | <?php echo Model_HTML::anchor_active('contact','Contact'); ?>
       </div>
     </div> <!-- end wrapper -->
 
