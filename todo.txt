@@ -1,5 +1,4 @@
 autocomplete fix
 css fixes
 add epe3hghseis
-add Help Us
 add readme licensce ???

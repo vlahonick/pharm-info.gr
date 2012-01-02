@@ -6,7 +6,7 @@ class Controller_Contact extends Controller_Template {
   {
     $view = View::factory('contact');
     $view->errors = $errors;
-    $this->template->title = 'Επικοινωνήστε μαζί μας - PharmInfo';
+    $this->template->title = 'Επικοινωνία | PharmInfo - Οδηγός Φαρμάκων';
 
     $this->template->content = $view;
   }

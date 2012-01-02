@@ -52,11 +52,7 @@ body {
   margin-bottom: -14px;
 }
 
-
-
-
 /* Links */
-
 a {
   color: #6aa413;
 }
@@ -74,8 +70,16 @@ a:active, a:hover {
   font-weight: bold;
 }
 
-/* Misc */
+/* Headings */
+h1 {
+  font-size: 24px;
+}
 
+h2 {
+  font-size: 20px;
+}
+
+/* Misc */
 img {
   border: none;
 }
@@ -84,17 +88,12 @@ img {
   margin-bottom: 5px;
 }
 
-h1 {
-  font-size: 24px;
-}
-
 .ab {
   margin-top: 25px;
 }
 
 
 /* Contact Form */
-
 .contact-form label {
   display: block;
   font-weight: bold;
