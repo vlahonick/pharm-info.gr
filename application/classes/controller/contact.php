@@ -5,10 +5,9 @@ class Controller_Contact extends Controller_Template {
   public function action_index($errors = NULL)
   {
     $view = View::factory('contact');
-    $this->template->home = FALSE;
     $view->errors = $errors;
     $this->template->title = 'Επικοινωνήστε μαζί μας - PharmInfo';
-    
+
     $this->template->content = $view;
   }
 
