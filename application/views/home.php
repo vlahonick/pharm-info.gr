@@ -9,7 +9,6 @@
 	<option value="">Φαρμακολογική Κατηγορία</option>
 </select>
 
-	<?php echo Model_HTML::anchor_active('explanations','Επεξηγήσεις'); ?>
 <div class="marginb5"></div>
 <input type="text" name="Search Bar" id="sb" />
 <input type="image" src="images/search.png" id="simg" />
