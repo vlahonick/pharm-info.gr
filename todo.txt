@@ -1,3 +1,5 @@
 autocomplete fix
 css fixes
+explanations ? me synnefaki
 add readme licensce ???
+validations ?
