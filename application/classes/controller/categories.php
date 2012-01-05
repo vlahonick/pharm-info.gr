@@ -2,12 +2,12 @@
 
 class Controller_Categories extends Controller_Template {
 
-  public function action_index()
-  {
-    $view = View::factory('categories');
-    $this->template->title = 'Κατηγορίες | PharmInfo - Οδηγός Φαρμάκων';
+	public function action_index()
+	{
+		$view = View::factory('categories');
+		$this->template->title = 'Κατηγορίες | PharmInfo - Οδηγός Φαρμάκων';
 
-    $this->template->content = $view;
-  }
+		$this->template->content = $view;
+	}
 
 }
