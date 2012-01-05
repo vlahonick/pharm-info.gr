@@ -4,11 +4,11 @@ class Controller_Helpus extends Controller_Template {
 
 	public function action_index()
 	{
-    $view = View::factory('helpus');
-    $this->template->home = FALSE;
-    $this->template->title = 'Βοηθήστε μας | PharmInfo - Οδηγός Φαρμάκων';
-    
-    $this->template->content = $view;
+		$view = View::factory('helpus');
+		$this->template->home = FALSE;
+		$this->template->title = 'Βοηθήστε μας | PharmInfo - Οδηγός Φαρμάκων';
+
+		$this->template->content = $view;
 	}
 
 }

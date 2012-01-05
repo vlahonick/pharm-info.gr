@@ -2,12 +2,12 @@
 
 class Controller_Faq extends Controller_Template {
 
-  public function action_index()
-  {
-    $view = View::factory('faq');
-    $this->template->title = 'Συχνές Ερωτήσεις - PharmInfo';
+	public function action_index()
+	{
+		$view = View::factory('faq');
+		$this->template->title = 'Συχνές Ερωτήσεις - PharmInfo';
 
-    $this->template->content = $view;
-  }
+		$this->template->content = $view;
+	}
 
 }

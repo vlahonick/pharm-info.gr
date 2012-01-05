@@ -5,7 +5,7 @@
 		<title><?php print $title ?></title>
 		<meta name="description" content="PharmInfo - Οδηγός Φαρμάκων" />
 		<meta name="keywords" content="PharmInfo, Οδηγός, Φάρμακα" />
-		<meta name="author" content="vlahonick & paris" />
+		<meta name="author" content="vlahonick & rootatwc" />
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" href="<?php echo url::base(); ?>css/style.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo url::base(); ?>css/jquery-ui.css" type="text/css" />
@@ -37,7 +37,7 @@
 			</div> <!-- end header-->
 			<?php endif; ?>
 
-				<?php print $content; ?>
+			<?php print $content; ?>
 
 			<div id="footer">
 				<?php echo Model_HTML::anchor_active('/','Home'); ?> |
