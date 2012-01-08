@@ -19,7 +19,7 @@
 
 <div class="form-item">
 	<?php echo form::label('chemical_info', $labels['chemical_info']); ?>
-	<?php echo form::input('chemical_info', $drug->chemical_info, array('id' => 'chemical_info')); ?>
+	<?php echo form::textarea('chemical_info', $drug->chemical_info, array('id' => 'chemical_info')); ?>
 </div>
 
 <div class="form-item">
@@ -30,12 +30,12 @@
 <div class="form-item">
 	<?php echo form::label('formulations', $labels['name']); ?>
 	<?php echo form::input('formulations', $drug->formulations, array('id' => 'formulations')); ?>
-	<div class="description">Εισάγετε σκευάσματα χωρισμένα με κόμα</div>
+	<div class="description">Εισάγετε σκευάσματα χωρισμένα με κόμμα</div>
 </div>
 
 <div class="form-item">
 	<?php echo form::label('forms', $labels['forms']); ?>
-	<?php echo form::input('forms', $drug->forms, array('id' => 'forms')); ?>
+	<?php echo form::textarea('forms', $drug->forms, array('id' => 'forms')); ?>
 </div>
 
 <div class="container">
@@ -53,17 +53,17 @@
 		<?php echo form::label('profile', 'Κίνδυνος παρενεργειών'); ?>
 		<?php echo form::select('profile[side_effects]', array(
 			'low' => 'Χαμηλός',
-			'medium' => 'Μέτριος',
-			'high' => 'Υψηλός',
+			'normal' => 'Κανονικός',
+			'normal+' => 'Κανονικός - απαιτείται εγρήγορση',
+			'high' => 'Αυξημένος',
 		), $drug->profile['side_effects'], array('id' => 'profile-side_effects')); ?>
 	</div>
 
 	<div class="form-item">
 		<?php echo form::label('profile', 'Κίνδυνος αλληλεπιδράσεων'); ?>
 		<?php echo form::select('profile[interactions]', array(
-			'low' => 'Χαμηλός',
-			'medium' => 'Μέτριος',
-			'high' => 'Υψηλός',
+			'medium' => 'Κανονικός',
+			'high' => 'Αυξημένος',
 		), $drug->profile['interactions'], array('id' => 'profile-interactions')); ?>
 	</div>
 </div>
