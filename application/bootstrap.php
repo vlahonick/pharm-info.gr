@@ -105,7 +105,7 @@ Kohana::modules(array(
   // 'image'      => MODPATH.'image',      // Image manipulation
   'orm'        => MODPATH.'orm',           // Object Relationship Mapping
   // 'unittest'   => MODPATH.'unittest',   // Unit testing
-   'userguide'  => MODPATH.'userguide',  // User guide and API documentation
+  'userguide'  => MODPATH.'userguide',  // User guide and API documentation
   'email'      => MODPATH.'email',         // Email Module
   'message'    => MODPATH.'message',       // Flash Message Module
   ));
@@ -114,8 +114,15 @@ Kohana::modules(array(
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
  * defaults for the URI.
  */
+Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
+  ->defaults(array(
+    'directory' => 'admin',
+    'controller' => 'add',
+    'action'     => 'drug',
+  ));
+
 Route::set('default', '(<controller>(/<action>(/<id>)))')
   ->defaults(array(
-    'controller' => 'home',
+    'controller' => 'dashboard',
     'action'     => 'index',
   ));
