@@ -37,11 +37,16 @@ class Controller_Admin_Drug extends Controller_Admin_Template {
 		$drug = ORM::factory('drug');
 		// Default values
 		$drug->profile = array(
-			'overdose' => 'low',
-			'side_effects' => 'low',
-			'interactions' => 'low',
+			'overdose' => 'high',
+			'side_effects' => 'high',
+			'interactions' => 'high',
 		);
 		$drug->storage = "Σε θερμοκρασία έως 28 βαθμούς C,\nξηρό μέρος, μακριά από το φως.";
+		$drug->precautions = "Αντενδείκνυται στα άτομα με:\nΠροσοχή στα άτομα με:\nΚύηση:\nΘηλασμός:\nΟδήγηση: Δεν αναμένονται επιπτώσεις.";
+		$drug->dosage = "Χορήγηση από το στόμα (p.o.):\nΕνήλικες:\nΗλικιωμένοι:";
+		$drug->diet_parameters = "Τροφές/γεύματα:\nΑλκοόλ:\nΠρόσθετες συμβουλές:";
+		$drug->chronic_usage = 'Δεν αναμένονται προβλήματα.';
+		$drug->interactions = "Β.Ε.:\n\nΒ.Ε.:\n\nΒ.Ε.:";
 
 		$results = $category->find_all();
 		foreach ($results as $category) {
