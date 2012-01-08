@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 05, 2012 at 03:46 AM
+-- Generation Time: Jan 08, 2012 at 07:24 PM
 -- Server version: 5.1.58
 -- PHP Version: 5.3.8-1+b1
 
@@ -59,9 +59,9 @@ CREATE TABLE IF NOT EXISTS `drugs` (
   `attention_points` mediumtext NOT NULL,
   `storage` mediumtext NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `formulation_id` (`formulation_id`),
-  UNIQUE KEY `substance` (`substance`,`substance_en`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  UNIQUE KEY `substance` (`substance`,`substance_en`),
+  KEY `formulation_id` (`formulation_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=38 ;
 
 -- --------------------------------------------------------
 
@@ -168,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `username`, `password`, `logins`, `last_login`) VALUES
-(1, 'admin@example.com', 'admin', '471b9d0553970f88c57e5d7542fbe2db85f63cc200cab05c0026c4d7f8993a9d', 13, 1325718243);
+(1, 'admin@example.com', 'admin', '471b9d0553970f88c57e5d7542fbe2db85f63cc200cab05c0026c4d7f8993a9d', 18, 1326033393);
 
 -- --------------------------------------------------------
 
