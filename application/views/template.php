@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="<?php echo url::base(); ?>css/jquery-ui.css" type="text/css" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="<?php echo url::base(); ?>scripts/PharmInfo.js"></script>
+		<script type="text/javascript" src="<?php echo url::base(); ?>scripts/pharminfo.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
