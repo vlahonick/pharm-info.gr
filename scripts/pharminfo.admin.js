@@ -1,14 +1,12 @@
 (function($){
 
-	if(typeof tinyMCE !== 'undefined') {
-		tinyMCE.init({
-			theme : "advanced",
-			mode : "textareas",
-			theme_advanced_toolbar_location : "top",
-			theme_advanced_toolbar_align : "left",
-			width : "100%",
-			height: "480"
-		});
-	}
+	$('.tinymce textarea').tinymce({
+		script_url : '/scripts/tiny_mce/tiny_mce.js',
+		theme : "advanced",
+		theme_advanced_toolbar_location : "top",
+		theme_advanced_toolbar_align : "left",
+		width : "50%",
+		height: "280"
+	});
 
 })(jQuery);

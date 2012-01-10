@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<?php print $content; ?>
-		<script src="<?php echo url::base(); ?>scripts/tiny_mce/tiny_mce.js"></script>
+		<script src="<?php echo url::base(); ?>scripts/tiny_mce/jquery.tinymce.js"></script>
 		<script src="<?php echo url::base(); ?>scripts/pharminfo.admin.js"></script>
 	</body>
 </html>
