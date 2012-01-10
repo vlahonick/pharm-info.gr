@@ -43,26 +43,32 @@ class Controller_Admin_Drug extends Controller_Admin_Template {
 			'interactions' => 'high',
 		);
 
-		$drug->storage = "Σε θερμοκρασία έως 28 βαθμούς C,\nξηρό μέρος, μακριά από το φως.";
+		$drug->storage = 'Σε θερμοκρασία έως 28 βαθμούς C,<br />ξηρό μέρος, μακριά από το φως.';
 
-		$drug->precautions = "<strong>Αντενδείκνυται στα άτομα με:</strong>\n\n"
-			."<strong>Προσοχή στα άτομα με:</strong>\n\n"
-			."<strong>Κύηση:</strong>\n\n"
-			."<strong>Θηλασμός:</strong>\n\n"
-			."<strong>Οδήγηση:</strong> Δεν αναμένονται επιπτώσεις.";
+		$drug->precautions = '<strong>Αντενδείκνυται στα άτομα με:</strong><br /><br />'
+			.'<strong>Προσοχή στα άτομα με:</strong><br /><br />'
+			.'<strong>Κύηση:</strong><br /><br />'
+			.'<strong>Θηλασμός:</strong><br /><br />'
+			.'<strong>Οδήγηση:</strong> Δεν αναμένονται επιπτώσεις.';
 
-		$drug->dosage = "<strong>Χορήγηση από το στόμα (p.o.):</strong>\n\n"
-			."<strong>Ενήλικες:</strong>\n\n"
-			."<strong>Ηλικιωμένοι:</strong>";
+		$drug->dosage = '<strong>Χορήγηση από το στόμα (p.o.):</strong><br /><br />'
+			.'<strong>Ενήλικες:</strong><br /><br />'
+			.'<strong>Ηλικιωμένοι:</strong>';
 
-		$drug->diet_parameters = "<strong>Τροφές/γεύματα:</strong>\n\n"
-			."<strong>Αλκοόλ:</strong>\n\n"
-			."<strong>Πρόσθετες συμβουλές:</strong>";
+		$drug->action = '<strong>Έναρξη δράσης:</strong><br /><br />'
+			.'<strong>Μέγιστη συγκέντρωση στον ορό:</strong><br /><br />'
+			.'<strong>Διάρκεια δράσης:</strong><br /><br />'
+			.'<strong>Εάν χαθεί μια δόση:</strong><br /><br />'
+			.'<strong>Υπέρβαση της δόσης:</strong>';
 
-		$drug->side_effects = "Συχνότητα: εμφανίζεται συχνά. Ειδοποιήστε το γιατρό σε: ένταση ή επιμονή.";
+		$drug->diet_parameters = '<strong>Τροφές/γεύματα:</strong><br /><br />'
+			.'<strong>Αλκοόλ:</strong><br /><br />'
+			.'<strong>Πρόσθετες συμβουλές:</strong>';
+
+		$drug->side_effects = 'Συχνότητα: εμφανίζεται συχνά. Ειδοποιήστε το γιατρό σε: ένταση ή επιμονή.';
 
 		$drug->chronic_usage = 'Δεν αναμένονται προβλήματα.';
-		$drug->interactions = "<strong>Β.Ε.:</strong>\n\n<strong>Β.Ε.:</strong>\n\n<strong>Β.Ε.:</strong>";
+		$drug->interactions = '<strong>Β.Ε.:</strong><br /><br /><strong>Β.Ε.:</strong><br /><br /><strong>Β.Ε.:</strong>';
 
 		$results = $category->find_all();
 		foreach ($results as $category) {
