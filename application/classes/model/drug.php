@@ -72,4 +72,47 @@ class Model_Drug extends ORM {
 			'storage' => 'Φύλαξη',
 		);
 	}
+
+	/**
+	 * Assign default values for drug properties.
+	 *
+	 * @return  $this
+	 */
+	public function defaults()
+	{
+		$this->profile = array(
+			'overdose' => 'high',
+			'side_effects' => 'high',
+			'interactions' => 'high',
+		);
+
+		$this->storage = 'Σε θερμοκρασία έως 28 βαθμούς C,<br />ξηρό μέρος, μακριά από το φως.';
+
+		$this->precautions = '<strong>Αντενδείκνυται στα άτομα με:</strong><br /><br />'
+			.'<strong>Προσοχή στα άτομα με:</strong><br /><br />'
+			.'<strong>Κύηση:</strong><br /><br />'
+			.'<strong>Θηλασμός:</strong><br /><br />'
+			.'<strong>Οδήγηση:</strong> Δεν αναμένονται επιπτώσεις.';
+
+		$this->dosage = '<strong>Χορήγηση από το στόμα (p.o.):</strong><br /><br />'
+			.'<strong>Ενήλικες:</strong><br /><br />'
+			.'<strong>Ηλικιωμένοι:</strong>';
+
+		$this->action = '<strong>Έναρξη δράσης:</strong><br /><br />'
+			.'<strong>Μέγιστη συγκέντρωση στον ορό:</strong><br /><br />'
+			.'<strong>Διάρκεια δράσης:</strong><br /><br />'
+			.'<strong>Εάν χαθεί μια δόση:</strong>Να ληφθεί το συντομότερο δυνατό. Αν η επόμενη δόση είναι μέσα στις επόμενες h, να ληφθεί άμεσα μια δόση και να παραληφθεί η επόμενη.<br /><br />'
+			.'<strong>Υπέρβαση της δόσης:</strong>Μια επιπλέον δόση δεν προκαλεί ανησυχία.Εάν ληφθεί μεγαλύτερη δόση ή εάν παρατηρηθούν ασυνήθιστα συμπτώματα, απαιτείται η συμβουλή γιατρού';
+
+		$this->diet_parameters = '<strong>Τροφές/γεύματα:</strong><br /><br />'
+			.'<strong>Αλκοόλ:</strong><br /><br />'
+			.'<strong>Πρόσθετες συμβουλές:</strong>';
+
+		$this->side_effects = 'Συχνότητα: εμφανίζεται συχνά. Ειδοποιήστε το γιατρό σε: ένταση ή επιμονή.';
+
+		$this->chronic_usage = 'Δεν αναμένονται προβλήματα.';
+		$this->interactions = '<strong>Β.Ε.:</strong><br /><br /><strong>Β.Ε.:</strong><br /><br /><strong>Β.Ε.:</strong>';
+
+		return $this;
+	}
 }
