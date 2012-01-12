@@ -35,8 +35,6 @@ class Controller_Contact extends Controller_Template {
 			Email::send($to, $from, $subject, $message, $html = TRUE);
 
 		}
-		$errors = $post->errors();
-		$this->action_index($errors);
-
+		$this->action_index($post->errors());
 	}
 }

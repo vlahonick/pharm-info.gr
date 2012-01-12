@@ -1,7 +1,0 @@
-[10-Jan-2012 23:04:35] PHP Fatal error:  Cannot use object of type Model_Drug as array in /var/www/PharmInfo/application/views/drug.php on line 2
-[10-Jan-2012 23:04:49] PHP Parse error:  syntax error, unexpected ':' in /var/www/PharmInfo/application/views/drug.php on line 2
-[10-Jan-2012 23:04:50] PHP Parse error:  syntax error, unexpected ':' in /var/www/PharmInfo/application/views/drug.php on line 2
-[10-Jan-2012 23:48:24] PHP Fatal error:  Call to a member function labels() on a non-object in /var/www/PharmInfo/application/classes/controller/admin/drug.php on line 44
-[11-Jan-2012 00:17:11] PHP Parse error:  syntax error, unexpected ';' in /var/www/PharmInfo/application/classes/model/csv.php on line 41
-[12-Jan-2012 23:51:30] PHP Fatal error:  Call to undefined method Request::get() in /var/www/PharmInfo/application/classes/controller/ajax.php on line 18
-[13-Jan-2012 00:00:35] PHP Fatal error:  Call to undefined method Request::get() in /var/www/PharmInfo/application/classes/controller/ajax.php on line 18
