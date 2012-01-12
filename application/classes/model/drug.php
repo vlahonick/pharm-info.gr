@@ -94,7 +94,7 @@ class Model_Drug extends ORM {
 			.'<strong>Θηλασμός:</strong><br /><br />'
 			.'<strong>Οδήγηση:</strong> Δεν αναμένονται επιπτώσεις.';
 
-		$this->dosage = '<strong>Χορήγηση από το στόμα (p.o.):</strong><br /><br />'
+		$this->dosage = '<span style="text-decoration:underline;">Χορήγηση από το στόμα (p.o.):</span><br /><br />'
 			.'<strong>Ενήλικες:</strong><br /><br />'
 			.'<strong>Ηλικιωμένοι:</strong>';
 
