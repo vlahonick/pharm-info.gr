@@ -47,7 +47,7 @@ class Model_CSV extends Model {
 
 			if ( ! $category->id) {
 				$category = ORM::factory('category');
-				$category->name = $cat;
+				$category->name = trim(strip_tags($cat));
 				$category->save();
 			}
 			$drug->add('categories', $category);

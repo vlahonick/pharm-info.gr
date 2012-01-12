@@ -111,7 +111,9 @@ class Model_Drug extends ORM {
 		$this->side_effects = 'Συχνότητα: εμφανίζεται συχνά. Ειδοποιήστε το γιατρό σε: ένταση ή επιμονή.';
 
 		$this->chronic_usage = 'Δεν αναμένονται προβλήματα.';
-		$this->interactions = '<strong>Β.Ε.:</strong><br /><br /><strong>Β.Ε.:</strong><br /><br /><strong>Β.Ε.:</strong>';
+		$this->interactions = '<strong>Αποτέλεσμα:</strong><br /><strong>Β.Ε.:</strong><br /><br />'
+			.'<strong>Αποτέλεσμα:</strong><br /><strong>Β.Ε.:</strong><br /><br />'
+			.'<strong>Αποτέλεσμα:</strong><br /><strong>Β.Ε.:</strong>';
 
 		return $this;
 	}
