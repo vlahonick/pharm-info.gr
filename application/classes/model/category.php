@@ -26,4 +26,12 @@ class Model_Category extends ORM {
 		return array('name' => 'Φαρμακολογική Κατηγορία');
 	}
 
+	public function get_keyed()
+	{
+		$categories = array();
+		foreach ($this->find_all() as $category) {
+			$categories[$category->id] = $category->name;
+		}
+		return $categories;
+	}
 }

@@ -5,9 +5,7 @@ class Controller_Admin_User extends Controller_Admin_Template {
 	public function action_add()
 	{
 		if ($this->request->post('submit')) {
-			$user = ORM::factory('user');
-			$user->username = $this->request->post('username');
-			$user->email = $this->request->post('email');
+			$user = ORM::factory('user')->values($this->request->post());
 			$password = Text::random();
 			$user->password = $password;
 			$user->save();
@@ -17,13 +15,10 @@ class Controller_Admin_User extends Controller_Admin_Template {
 				$user->add('roles', ORM::factory('role')->where('id', '=', $role_id)->find());
 			}
 		}
-		$results = ORM::factory('role')->find_all();
-		foreach ($results as $role) {
-			$roles[$role->id] = $role->name;
-		}
+
 		$view = View::factory('admin/user');
 		$view->user = ORM::factory('user');
-		$view->roles = isset($roles) ? $roles : array();
+		$view->roles = ORM::factory('role')->get_keyed();
 		$view->messages = Message::display();
 		$this->template->content = $view;
 	}

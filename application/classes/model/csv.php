@@ -2,7 +2,31 @@
 
 class Model_CSV extends Model {
 
-	public function map_drug($data) {
+	static public function map_drugs($file) {
+		$handle = fopen($file, 'r');
+		if ( $handle === FALSE) {
+			return FALSE;
+		}
+
+		$i = 0;
+		while (($data = fgetcsv($handle, 1000)) !== FALSE) {
+			// Check if substance exists
+			$drug = ORM::factory('drug')
+				->where('substance', '=', $data[1])
+				->find();
+
+			if ( ! $drug->id) {
+				self::save_drug($data);
+				$i++;
+			}
+		}
+
+		fclose($handle);
+		return $i;
+	}
+
+	static public function save_drug($data) {
+
 		$data = array_map('nl2br', $data);
 		$data = array_map('trim', $data);
 		$drug = ORM::factory('drug');

@@ -117,4 +117,50 @@ class Model_Drug extends ORM {
 
 		return $this;
 	}
+
+	/**
+	 * Labels for full loaded drug object.
+	 *
+	 * @return array Labels
+	 */
+	public function all_labels()
+	{
+		$category = ORM::factory('category');
+		$formulation = ORM::factory('formulation');
+
+		$labels = array_merge($this->labels(), $category->labels());
+		// Formulations and categories has the same field name in database
+		// so we have to seperate them before merging the rest lablels.
+		$labels['category_name'] = $labels['name'];
+		return array_merge($labels, $formulation->labels());
+	}
+
+	public function save_all($post)
+	{
+		// First create/save the Formulation if not already exists
+		$formulation = ORM::factory('formulation')
+			->where('name', '=', $post['formulation_id'])
+			->find();
+
+		if ( ! $formulation->id) {
+			$formulation = ORM::factory('formulation');
+			$formulation->name = $post['formulation_id'];
+			$formulation->save();
+		}
+
+		$this->values($post);
+		$this->profile = serialize($this->profile);
+		$this->formulation_id = $formulation->id;
+		$this->save();
+
+		// Add categories
+		foreach ($post['categories'] as $category_id) {
+			$this->add('categories', ORM::factory('category')->where('id', '=', $category_id)->find());
+		}
+		// Add extra_formulations
+		$extra_formulations = !empty($post['formulations']) ? explode(',', $post['formulations']) : array();
+		foreach ($extra_formulations as $formulation_name) {
+			$this->add('formulations', ORM::factory('formulation')->where('name', '=', $formulation_name)->find());
+		}
+	}
 }
