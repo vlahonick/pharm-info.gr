@@ -13,6 +13,9 @@
 			theme : "advanced",
 			theme_advanced_toolbar_location : "top",
 			theme_advanced_toolbar_align : "left",
+			theme_advanced_buttons1 : "bold,italic,underline,|,cut,copy,paste,|,undo,redo,|,code,|,fontselect,fontsizeselect,|,search,replace,|,preview,fullscreen",
+			theme_advanced_buttons2 : "",
+			theme_advanced_buttons3 : "",
 			width : "50%",
 			height: "280"
 		});
