@@ -8,4 +8,13 @@ class Model_Role extends Model_Auth_Role {
 		'name' => NULL,
 		'description' => NULL,
 	);
+
+	public function get_keyed()
+	{
+		$roles = array();
+		foreach ($this->find_all() as $role) {
+			$roles[$role->id] = $role->name;
+		}
+		return $roles;
+	}
 }
