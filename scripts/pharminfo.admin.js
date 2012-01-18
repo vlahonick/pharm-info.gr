@@ -11,14 +11,19 @@
 		$('.tinymce textarea').tinymce({
 			script_url : '/scripts/tiny_mce/tiny_mce.js',
 			theme : "advanced",
-			plugins : "preview,searchreplace",
+			plugins : "preview,searchreplace,fullscreen",
 			theme_advanced_toolbar_location : "top",
 			theme_advanced_toolbar_align : "left",
 			theme_advanced_buttons1 : "bold,italic,underline,|,cut,copy,paste,|,undo,redo,|,code,|,fontselect,fontsizeselect,|,search,replace,|,preview,fullscreen",
 			theme_advanced_buttons2 : "",
 			theme_advanced_buttons3 : "",
 			width : "50%",
-			height: "280"
+			height: "280",
+			theme_advanced_statusbar_location : 'bottom',
+			theme_advanced_path : false,
+			theme_advanced_resizing : true,
+			theme_advanced_resize_horizontal : true,
+			theme_advanced_resizing_use_cookie : true
 		});
 
 		$('input#formulations').autocomplete({

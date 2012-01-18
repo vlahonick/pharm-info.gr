@@ -117,8 +117,8 @@ Kohana::modules(array(
 Route::set('admin', 'admin(/<controller>(/<action>(/<id>)))')
   ->defaults(array(
     'directory' => 'admin',
-    'controller' => 'add',
-    'action'     => 'drug',
+    'controller' => 'dashboard',
+    'action'     => 'index',
   ));
 
 Route::set('default', '(<controller>(/<action>(/<id>)))')
