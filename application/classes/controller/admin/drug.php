@@ -50,4 +50,9 @@ class Controller_Admin_Drug extends Controller_Admin_Template {
 		$view->messages = Message::display();
 		$this->template->content = $view;
 	}
+
+	public function action_delete() {
+		ORM::factory('drug', $this->request->param('id'))->delete();
+		$this->request->redirect('admin/idnex');
+	}
 }
