@@ -1,20 +1,33 @@
+.form-item label, .form-item input, .form-item submit {
+	display: block;
+}
+
+.form-item .description {
+	color: grey;
+	font-size: 10px;
+}
+
+.form-item {
+	padding: 5px 0;
+}
+
 .form-item label, .form-item submit {
 	display: block;
-  font: 17px Arial;
-  font-weight: bold;
-  margin-bottom: 5px;
+	font: 17px Arial;
+	font-weight: bold;
+	margin-bottom: 5px;
 }
 
 .form-item input, .mceContentBody {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 #categories {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .mceContentBody {
-  resize: both;
+	resize: both;
 }
 
 .form-item .description {
