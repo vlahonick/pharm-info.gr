@@ -1,3 +1,9 @@
+<div class="fright">
+  <?php echo HTML::anchor('user/dashboard', 'Dashboard');?> |
+  <?php echo HTML::anchor('admin/category/add', 'New Category');?> |
+  <?php echo HTML::anchor('user/logout', 'Logout');?>
+</div>
+
 <?php echo $messages; ?>
 
 <?php echo form::open(); ?>
