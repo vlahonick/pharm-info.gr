@@ -1,5 +1,3 @@
-<?php echo $messages; ?>
-
 <?php echo Form::open(NULL, array('enctype' => 'multipart/form-data')); ?>
 
 <div class="form-item">

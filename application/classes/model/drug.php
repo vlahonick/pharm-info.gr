@@ -44,6 +44,16 @@ class Model_Drug extends ORM {
 		),
 	);
 
+	public function __get($key)
+	{
+		if ($key === 'profile')
+		{
+			return unserialize(parent::__get($key));
+		}
+
+		return parent::__get($key);
+	}
+
 	/**
 	 * Labels for fields in this model
 	 *
@@ -76,7 +86,7 @@ class Model_Drug extends ORM {
 	/**
 	 * Assign default values for drug properties.
 	 *
-	 * @return  $this
+	 * @return	$this
 	 */
 	public function defaults()
 	{
@@ -161,7 +171,7 @@ class Model_Drug extends ORM {
 		// Add extra_formulations
 		$extra_formulations = !empty($post['formulations']) ? explode(',', $post['formulations']) : array();
 		foreach ($extra_formulations as $formulation_name) {
-			$this->add('formulations', ORM::factory('formulation')->where('name', '=', $formulation_name)->find());
+			$this->add('formulations', ORM::factory('formulation')->where('name', 'LIKE', '%'.$formulation_name.'%')->find());
 		}
 	}
 }

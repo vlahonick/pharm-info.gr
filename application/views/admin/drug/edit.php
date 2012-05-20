@@ -1,5 +1,3 @@
-<?php echo $messages; ?>
-
 <?php echo form::open(); ?>
 
 <div class="form-item">

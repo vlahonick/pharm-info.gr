@@ -11,4 +11,5 @@ class Controller_Admin_Template extends Controller_Template {
 			$this->request->redirect('user');
 		}
 	}
+
 }

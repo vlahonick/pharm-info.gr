@@ -9,15 +9,16 @@
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" href="<?php echo url::base(); ?>css/style.css" type="text/css" />
 		<link rel="stylesheet" href="<?php echo url::base(); ?>css/jquery-ui.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo url::base(); ?>css/toolbar.css" type="text/css" />
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="<?php echo url::base(); ?>scripts/pharminfo.js"></script>
 	</head>
-	<body>
+	<body class="<?php echo $toolbar ? 'toolbar' : 'no-toolbar'; ?>">
+		<?php echo $toolbar; ?>
 		<div id="wrapper">
 
 			<?php if ( ! isset($home)) :?>
-
 			<div id="header">
 				<a href="<?php echo url::base(); ?>">
 					<img src="<?php echo url::base(); ?>images/logo_small.jpg" alt="InfoPharm" id="logo_small" />
@@ -37,7 +38,8 @@
 			</div> <!-- end header-->
 			<?php endif; ?>
 
-			<?php print $content; ?>
+			<?php echo $messages; ?>
+			<?php echo $content; ?>
 
 			<div id="footer">
 				<?php echo Model_HTML::anchor_active('/','Home'); ?> |
