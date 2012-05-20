@@ -29,13 +29,16 @@ class Controller_Contact extends Controller_Template {
 			$message = HTML::chars($this->request->post('message')).'<br/><hr/><br/>sent from '
 				.strip_tags($this->request->post('name')).' at '
 				.date('m-d-Y H:i', $_SERVER['REQUEST_TIME']).
-				' using your contact form at http://rootatwc.com/contact';
+				' using your contact form at http://pharm-info.gr/contact';
 
 			Email::send($to, $from, $subject, $message, TRUE);
 			Message::success('Το μήνυμά σας παραδόθηκε! Ευχαριστούμε που επικοινωνήσατε μαζί μας!');
 		}
+		else
+		{
+			Message::error($post->errors('contact'));
+		}
 
-		Message::error($post->errors('contact'));
 		$this->request->redirect('contact');
 	}
 }
