@@ -1,5 +1,24 @@
 autocomplete fix
-css fixes
-explanations ? me synnefaki
-add readme licensce ???
-validations ?
+
+css fixes - re etsi opws einai twra xwrismena ta css (dld to dashboard
+na pairnei apo to style k oxi to admin eiani poly ampalo, prepei na to fix
+auto)
+
+backend - genika gia backend tha elega mia super simple asprila.
+genika KISS
+
+anazhthsh & indexes - tha elega na remove to drop down panw
+apo tn search bar k na mpei kapou allou. auto p lew to gt 1. etsi
+einai asxhmia, 2. fovamai mn mperdeuei tous users k nomizoun ps
+gia na searcharoun ena farmako px vash ths farm. kathgorias t tha
+prepei na to epile3oun apo to dropdown k meta na to grapsoun stn bar.
+
+default keimeno stn search bar: plhktrologhste edw to farmako
+p sas endiaferei (kati tetoio)
+
+explanations (ta sygkentrwnw siga siga) ? me synnefaki
+
+add readme licensce ??? nomizw peritto mias k einai epi ths ousias site (tha mporousame omws na addaroume free license stn db an tn valoume gia dl san CSV)
+
+validations ? nomizw peritto alla an otan to teleiwsome einai ontws valid
+olo o kwdikas to xynoume kapou

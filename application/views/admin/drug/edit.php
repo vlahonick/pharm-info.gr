@@ -1,3 +1,14 @@
+<<<<<<< HEAD:application/views/admin/drug/edit.php
+=======
+<div class="fright">
+  <?php echo HTML::anchor('user/dashboard', 'Dashboard');?> |
+  <?php echo HTML::anchor('admin/category/add', 'New Category');?> |
+  <?php echo HTML::anchor('user/logout', 'Logout');?>
+</div>
+
+<?php echo $messages; ?>
+
+>>>>>>> d7fd90a332d4b61ae5c673cc82cd50110b21ae52:application/views/admin/drug.php
 <?php echo form::open(); ?>
 
 <div class="form-item">
