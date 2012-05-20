@@ -1,3 +1,14 @@
+/* Actions list */
+ul#actions {
+	margin: 10px;
+	padding: 0;
+}
+ul#actions li {
+	display: inline;
+	padding-right: 10px;
+}
+
+/* Add drug form */
 .form-item label, .form-item input, .form-item submit {
 	display: block;
 }

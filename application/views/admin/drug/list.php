@@ -1,3 +1,8 @@
+<ul id="actions">
+	<li><?php echo HTML::anchor('admin/drug/add', 'Add new'); ?></li>
+	<li><?php echo HTML::anchor('admin/drug/import', 'Import from csv'); ?></li>
+</ul>
+
 <table>
 	<thead>
 		<th>ID</th>

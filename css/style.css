@@ -3,6 +3,10 @@ body {
   text-align: center;
 }
 
+select {
+  color: #000000;
+}
+
 #wrapper {
   width: 800px;
   margin: 0 auto;
@@ -109,10 +113,15 @@ img {
   width: 250px;
 }
 
-.message {
-  font-weight: bold;
+/* Messages */
+ul#message {
   padding: 15px 35px;
   margin-bottom: 25px;
+  list-style: none;
+}
+
+ul#message li {
+  font-weight: bold;
 }
 
 .success {
@@ -124,8 +133,4 @@ img {
 .error {
   background-color: #ffcccc;
   border: 1px solid #dd7777;
-}
-
-select {
-  color: #000000;
 }

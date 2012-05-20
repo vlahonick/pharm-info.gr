@@ -48,7 +48,7 @@ class Model_Drug extends ORM {
 	{
 		if ($key === 'profile')
 		{
-			return unserialize(parent::__get($key));
+			return @unserialize(parent::__get($key));
 		}
 
 		return parent::__get($key);

@@ -28,4 +28,9 @@ class Controller_Admin_User extends Controller_Admin_Template {
 		$view->roles = ORM::factory('role')->get_keyed();
 		$this->template->content = $view;
 	}
+
+	public function action_delete() {
+		ORM::factory('user', $this->request->param('id'))->delete();
+		$this->request->redirect('admin/user/index');
+	}
 }

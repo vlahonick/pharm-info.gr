@@ -24,4 +24,9 @@ class Controller_Admin_Category extends Controller_Admin_Template {
 		$this->template->content = $view;
 	}
 
+	public function action_delete() {
+		ORM::factory('category', $this->request->param('id'))->delete();
+		$this->request->redirect('admin/category/index');
+	}
+
 }

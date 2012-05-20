@@ -6,7 +6,7 @@ class Controller_User extends Controller_Template {
 	{
 		if (Auth::instance()->logged_in())
 		{
-			$this->request->redirect('user/dashboard');
+			$this->request->redirect('home');
 		}
 		$view = View::factory('user/login');
 		$this->template->title = 'Login';
@@ -17,10 +17,12 @@ class Controller_User extends Controller_Template {
 	{
 		if (Auth::instance()->login($this->request->post('username'), $this->request->post('password')))
 		{
-			$this->request->redirect('user/dashboard');
+			Message::success('Login successfull!');
+			$this->request->redirect('home');
 		}
 		else
 		{
+			Message::error('Invalid credentials!');
 			$this->request->redirect('user');
 		}
 	}
@@ -29,19 +31,6 @@ class Controller_User extends Controller_Template {
 	{
 		Auth::instance()->logout(TRUE);
 		$this->request->redirect('user');
-	}
-
-	public function action_dashboard()
-	{
-		if ( ! Auth::instance()->logged_in())
-		{
-			$this->request->redirect('user');
-		}
-		$view = View::factory('user/dashboard');
-		$view->user = Auth::instance()->get_user();
-		$view->is_admin = Auth::instance()->logged_in('admin');
-		$this->template->title = 'Dashboard';
-		$this->template->content = $view;
 	}
 
 }
