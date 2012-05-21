@@ -2,6 +2,13 @@
 
 class Controller_Admin_User extends Controller_Admin_Template {
 
+	public function action_index()
+	{
+		$view = View::factory('admin/user/list');
+		$view->users = ORM::factory('user')->find_all();
+		$this->template->content = $view;
+	}
+
 	public function action_add()
 	{
 		if ($this->request->post('submit')) {
@@ -16,10 +23,14 @@ class Controller_Admin_User extends Controller_Admin_Template {
 			}
 		}
 
-		$view = View::factory('admin/user');
+		$view = View::factory('admin/user/edit');
 		$view->user = ORM::factory('user');
 		$view->roles = ORM::factory('role')->get_keyed();
-		$view->messages = Message::display();
 		$this->template->content = $view;
+	}
+
+	public function action_delete() {
+		ORM::factory('user', $this->request->param('id'))->delete();
+		$this->request->redirect('admin/user/index');
 	}
 }
