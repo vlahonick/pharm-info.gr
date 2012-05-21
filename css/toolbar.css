@@ -1,0 +1,34 @@
+body.toolbar {
+	padding-top: 30px;
+}
+
+ul#toolbar {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	height: 30px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000;
+}
+
+ul#toolbar li {
+	padding: 5px 10px;
+	float: left;
+}
+
+ul#toolbar li.logout {
+	float: right;
+}
+
+ul#toolbar li a {
+	color: #fff;
+	text-decoration: none;
+	font: 13px Arial;
+}
+
+ul#toolbar li a.active {
+	font-weight: bold;
+}
