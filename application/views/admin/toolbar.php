@@ -1,8 +1,8 @@
 <ul id="toolbar">
-	<li><?php echo Model_HTML::anchor_active('/','Home'); ?></li>
-	<li><?php echo Model_HTML::anchor_active('admin/dashboard','Dashboard'); ?></li>
-	<li><?php echo Model_HTML::anchor_active('admin/category','Categories'); ?></li>
-	<li><?php echo Model_HTML::anchor_active('admin/drug','Drugs'); ?></li>
-	<li><?php echo Model_HTML::anchor_active('admin/user','Users'); ?></li>
-	<li class="logout"><?php echo Model_HTML::anchor_active('user/logout','Logout'); ?></li>
+	<li><?php echo HTML::anchor('/','Home'); ?></li>
+	<li><?php echo HTML::anchor('admin/dashboard','Dashboard'); ?></li>
+	<li><?php echo HTML::anchor('admin/category','Categories'); ?></li>
+	<li><?php echo HTML::anchor('admin/drug','Drugs'); ?></li>
+	<li><?php echo HTML::anchor('admin/user','Users'); ?></li>
+	<li class="logout"><?php echo HTML::anchor('user/logout','Logout'); ?></li>
 </ul>
